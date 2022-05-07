@@ -8,6 +8,29 @@ function onScroll() {
   }
 }
 
-function buttonMenu() {
-  bodyMenu.classList.toggle('menu-expanded')
+function openMenu() {
+  document.body.classList.add('menu-expanded')
 }
+
+function closeMenu() {
+  document.body.classList.remove('menu-expanded')
+}
+
+/*========= Scroll Reveal =========*/
+
+ScrollReveal({ 
+  reset: true, 
+  origin: 'top',
+  distance: '30px',
+  duration: 800
+ }).reveal(`
+  #home, 
+  #home img, 
+  #home .stats, 
+  #services,
+  #services header,
+  #services .card,
+  #about,
+  #about header,
+  #about .content
+  `)
