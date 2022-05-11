@@ -11,6 +11,8 @@
   --paragraph: hsla(210, 9%, 31%, 1);
   --brand-beige: hsla(39, 100%, 97%, 1);
   --brand-light: hsla(148, 23%, 89%, 1);
+  --green-hover: hsla(170, 100%, 14%, 1);
+
 
   --nav-height: 7.2rem;
 
@@ -87,6 +89,40 @@ section p{
 
   color: var(--paragraph);
 }
+
+.button{
+  background-color: var(--primary-color);
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+  margin-bottom: 6rem;
+
+  border: none;
+  border-radius: 4rem;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  transition: .3s;
+}
+
+.button:hover{
+  background-color: var(--green-hover);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem
+}
+
 
 /*======= NAVGATION =======================================================*/ 
 
@@ -185,7 +221,7 @@ body.menu-expanded .menu{
   text-decoration: none;
 }
 
-.menu .button{
+.menu .button-menu{
   background: #FFFFFF;
   border-radius: 4rem;
 
@@ -201,13 +237,6 @@ body.menu-expanded .menu{
 
   margin-top: 4.8rem;
   margin-bottom: 8rem;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem
 }
 
 body.menu-expanded .logo,
@@ -260,27 +289,8 @@ body.menu-expanded .close-menu path {
   margin-bottom: 3.2rem;
 }
 
-#home button{
-  background-color: var(--primary-color);
-  height: 6.2rem;
-  width: 26.3rem;
-  padding: 16px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 6rem;
-
-  border: none;
-  border-radius: 4rem;
-  
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.6rem;
+#home .button{
+  margin-inline: auto;
 }
 
 #home .stats {
@@ -375,4 +385,59 @@ body.menu-expanded .close-menu path {
 
 #contact header {
   margin-bottom: 3.2rem;
+} 
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
+#contact ul li{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+#contact .button{
+  margin-top: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+/*======= FOOTER  =======================================================*/ 
+
+footer{
+  padding-block: 6rem;
+
+  background-color: var(--primary-color);
+  color: white;
+
+  text-align: left;
+}
+
+p{
+  color: var(--brand-beige);
+  font-size: 1.6rem;
+  line-height: 2;
+
+  padding-top: 2.4rem;
+  padding-bottom: 3.2rem;
+}
+
+footer .logo svg{
+  width: 23.6rem;
+  height: 3.1rem;
+}
+
+footer .logo path{
+  fill: white;
+}
+
+footer .social-links{
+  justify-content: flex-start;
+} 
+
+
+/*======= BUTTOM BACK TO TOP  =======================================================*/ 
