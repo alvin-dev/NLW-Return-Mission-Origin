@@ -1,10 +1,26 @@
-// window.onscroll = () => {onScroll()};
+
+window.addEventListener('scroll', onScroll)
+
+onScroll()
 
 function onScroll() {
+  colorNavOnScroll()
+  showButtonToTop()
+}
+
+function colorNavOnScroll() {
   if(scrollY > 0){
     navigation.classList.add('scroll')
   }else{
     navigation.classList.remove('scroll')
+  }
+}
+
+function showButtonToTop() {
+  if (scrollY > 400){
+    backToTopButton.classList.add('show')
+  } else{
+    backToTopButton.classList.remove('show')
   }
 }
 
