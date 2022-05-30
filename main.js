@@ -8,11 +8,12 @@ function onScroll() {
   showButtonToTop()
 }
 
+
 function colorNavOnScroll() {
   if(scrollY > 0){
-    navigation.classList.add('scroll')
+    navigationn.classList.add('scroll')
   }else{
-    navigation.classList.remove('scroll')
+    navigationn.classList.remove('scroll')
   }
 }
 
