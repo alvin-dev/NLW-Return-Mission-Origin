@@ -588,7 +588,6 @@ footer .social-links {
 
   nav#navigationn.scroll .menu ul li a {
     color: var(--brand-light-2);
-    opacity: 0.6;
   }
 
   nav#navigationn.scroll .menu a.button-menu {
@@ -612,7 +611,7 @@ footer .social-links {
     background-color: var(--primary-color);
 
     position: relative;
-    bottom: -1.9rem;
+    bottom: -2rem;
     left: -1rem;
 
     display: block;
@@ -624,15 +623,18 @@ footer .social-links {
     background-color: white;
   }
 
+  nav#navigationn .menu li a.active::after,
   nav#navigationn .menu li a:hover::after {
     padding-inline: 1rem;
     width: 100%;
   }
 
+  nav#navigationn .menu li a.active,
   nav#navigationn.scroll .menu li a:hover {
     opacity: 1;
   }
 
+  nav#navigationn.scroll .menu a.button-menu.active,
   nav#navigationn.scroll .menu a.button-menu:hover {
     background-color: var(--primary-color);
     filter: brightness(1.3);
@@ -729,8 +731,7 @@ footer .social-links {
   #about .col-a {
     align-self: center;
   }
-  #about .col-b {
-  }
+
   #about .content p {
     margin-bottom: 0;
   }
